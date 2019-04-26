@@ -1099,7 +1099,12 @@ let bookings = api.shoottypes.get({});
 <tr>
 <td>400</td>
 <td>NotAvailable</td>
-<td>Requested resource is not availabile in your region or for the requested date/time.</td>
+<td>Requested resource is not available in your region or for the requested date/time.</td>
+</tr>
+<tr>
+<td>400</td>
+<td>NoCoverage</td>
+<td>There is no coverage by Snappr on the requested <code>latitude</code>/<code>longitude</code> for the <code>shoottype</code>.</td>
 </tr>
 <tr>
 <td>401</td>
@@ -1108,7 +1113,7 @@ let bookings = api.shoottypes.get({});
 </tr>
 <tr>
 <td>402</td>
-<td>InsuffientCredits</td>
+<td>InsufficientCredits</td>
 <td>The account does not have a sufficient credit balance to perform the request. Add more credits in the GUI.</td>
 </tr>
 <tr>
